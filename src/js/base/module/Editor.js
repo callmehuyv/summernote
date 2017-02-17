@@ -68,6 +68,8 @@ define([
         context.triggerEvent('scroll', event);
       }).on('paste', function (event) {
         context.triggerEvent('paste', event);
+      }).on('compositionend', function (event) {
+        context.triggerEvent('compositionend', event);
       });
 
       // init content before set event

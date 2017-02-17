@@ -20,6 +20,11 @@ define([
           self.handleKeyup(e);
         }
       },
+      'summernote.compositionend': function (we, e) {
+        if (!e.isDefaultPrevented()) {
+          self.handleKeyup(e);
+        }
+      },
       'summernote.keydown': function (we, e) {
         self.handleKeydown(e);
       },
